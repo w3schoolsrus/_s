@@ -1,11 +1,7 @@
 <?php
-/**
- * Заголовок нашей темы
- *
+/* Заголовок нашей темы
  * Это шаблон, который отображает весь раздел <head> и все до <div id="content">
- *
  * @link https://developer.wordpress.org/themes/basics/template-files/#template-partials
- *
  * @package _s
  */
 
