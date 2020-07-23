@@ -102,8 +102,8 @@ abbr[title] {border-bottom: none;text-decoration: underline;text-decoration: und
 b, strong {font-weight: bolder;}
 
 /**
- * 1. Correct the inheritance and scaling of font size in all browsers.
- * 2. Correct the odd `em` font sizing in all browsers.
+ * 1. Исправьте наследование и масштабирование размера шрифта во всех браузерах.
+ * 2. Исправьте нечетный размер шрифта `em` во всех браузерах.
  */
 code,
 kbd,
@@ -113,15 +113,14 @@ samp {
 }
 
 /**
- * Add the correct font size in all browsers.
+ * Добавьте правильный размер шрифта во всех браузерах.
  */
 small {
 	font-size: 80%;
 }
 
 /**
- * Prevent `sub` and `sup` elements from affecting the line height in
- * all browsers.
+ * Не допускайте, чтобы элементы `sub` и `sup` влияли на высоту строки во всех браузерах.
  */
 sub,
 sup {
@@ -139,11 +138,11 @@ sup {
 	top: -0.5em;
 }
 
-/* Embedded content
+/* Встроенный контент
 	 ========================================================================== */
 
 /**
- * Remove the border on images inside links in IE 10.
+ * Удалите границу с изображениями внутри ссылок в IE 10.
  */
 img {
 	border-style: none;
