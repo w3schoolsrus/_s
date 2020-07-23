@@ -1,96 +1,93 @@
 <?xml version="1.0"?>
-<ruleset name="WordPress Theme Coding Standards">
-	<!-- See https://github.com/squizlabs/PHP_CodeSniffer/wiki/Annotated-ruleset.xml -->
-	<!-- See https://github.com/WordPress/WordPress-Coding-Standards -->
-	<!-- See https://github.com/WPTRT/WPThemeReview -->
-	<!-- See https://github.com/PHPCompatibility/PHPCompatibilityWP -->
+<ruleset name="WordPress Theme Стандарты кодирования">
+	<!-- Смотрите https://github.com/squizlabs/PHP_CodeSniffer/wiki/Annotated-ruleset.xml -->
+	<!-- Смотрите https://github.com/WordPress/WordPress-Coding-Standards -->
+	<!-- Смотрите https://github.com/WPTRT/WPThemeReview -->
+	<!-- Смотрите https://github.com/PHPCompatibility/PHPCompatibilityWP -->
 
-	<!-- Set a description for this ruleset. -->
-	<description>A custom set of code standard rules to check for WordPress themes.</description>
+	<!-- Установите описание для этого набора правил. -->
+	<description>Пользовательский набор стандартных кодовых правил для проверки тем WordPress.</description>
 
 
 	<!--
 	#############################################################################
-	COMMAND LINE ARGUMENTS
+	КОМАНДНАЯ СТРОКА АРГУМЕНТОВ
 	https://github.com/squizlabs/PHP_CodeSniffer/wiki/Annotated-ruleset.xml
 	#############################################################################
 	-->
 
-	<!-- Pass some flags to PHPCS:
-		 p flag: Show progress of the run.
-		 s flag: Show sniff codes in all reports.
+	<!-- Передайте некоторые флаги PHPCS:
+		 p flag: Показать прогресс запуска.
+		 s flag: Показывать снифф коды во всех отчетах.
 	-->
 	<arg value="ps"/>
 
-	<!-- Strip the filepaths down to the relevant bit. -->
+	<!-- Обрезать путь к файлу до соответствующего бита. -->
 	<arg name="basepath" value="./"/>
 
-	<!-- Check up to 8 files simultanously. -->
+	<!-- Проверьте до 8 файлов одновременно. -->
 	<arg name="parallel" value="8"/>
 
-	<!-- Only check the PHP files. JS, and CSS files are checked separately with @wordpress/scripts package. -->
+	<!-- Только проверяйте файлы PHP. Файлы JS и CSS проверяются отдельно с помощью пакета @ wordpress / scripts. -->
 	<arg name="extensions" value="php"/>
 
-	<!-- Check all files in this directory and the directories below it. -->
+	<!-- Проверьте все файлы в этом каталоге и каталоги перед ним. -->
 	<file>.</file>
 
-	<!-- Exclude patterns. -->
+	<!-- Исключить шаблоны. -->
 	<exclude-pattern>/vendor/*</exclude-pattern>
 	<exclude-pattern>/node_modules/*</exclude-pattern>
 
-
 	<!--
 	#############################################################################
-	USE THE WordPress AND THE Theme Review RULESET
+	Используйте WordPress и обзор тем
 	#############################################################################
 	-->
 
 	<rule ref="WordPress">
-		<!-- This rule does not apply here since the _s prefix should be changed by the theme author. -->
+		<!-- Это правило здесь не применяется, так как префикс _s должен быть изменен автором темы. -->
 		<exclude name="WordPress.NamingConventions.PrefixAllGlobals.ShortPrefixPassed"/>
 	</rule>
 	<rule ref="WPThemeReview"/>
 
 	<!--
 	#############################################################################
-	SNIFF SPECIFIC CONFIGURATION
+	SNIFF СПЕЦИФИЧЕСКАЯ КОНФИГУРАЦИЯ
 	#############################################################################
 	-->
 
-	<!-- Verify that the text_domain is set to the desired text-domain.
-		 Multiple valid text domains can be provided as a comma-delimited list. -->
+	<!-- Убедитесь, что text_domain установлен на нужный текстовый домен.
+		 Несколько допустимых текстовых доменов могут быть предоставлены в виде списка через запятую. -->
 	<rule ref="WordPress.WP.I18n">
 		<properties>
 			<property name="text_domain" type="array" value="_s"/>
 		</properties>
 	</rule>
 
-	<!-- Allow for theme specific exceptions to the file name rules based
-		 on the theme hierarchy. -->
+	<!-- Разрешить исключения для конкретных тем в правилах имен файлов на основе иерархии тем. -->
 	<rule ref="WordPress.Files.FileName">
 		<properties>
 			<property name="is_theme" value="true"/>
 		</properties>
 	</rule>
 
-	<!-- Set the minimum supported WP version. This is used by several sniffs.
-		 The minimum version set here should be in line with the minimum WP version
-		 as set in the "Requires at least" tag in the readme.txt file. -->
+	<!-- Установите минимальную поддерживаемую версию WP. Это используется несколькими снифами.
+		 Установленная здесь минимальная версия должна соответствовать минимальной версии WP, указанной в теге «Требуется минимум» в файле readme.txt. -->
 	<config name="minimum_supported_wp_version" value="4.5"/>
 
 	<rule ref="WordPress.Arrays.MultipleStatementAlignment">
 		<properties>
-			<!-- No need to adjust alignment of large arrays when the item with the largest key is removed. -->
+			<!-- Нет необходимости настраивать выравнивание больших массивов при удалении элемента с наибольшим ключом. -->
 			<property name="exact" value="false"/>
-			<!-- Don't align multi-line items if ALL items in the array are multi-line. -->
+			<!-- Не выравнивайте многострочные элементы, если ВСЕ элементы в массиве многострочные. -->
 			<property name="alignMultilineItems" value="!=100"/>
-			<!-- Array assignment operator should always be on the same line as the array key. -->
+			<!-- Оператор присваивания массива всегда должен находиться на одной строке с ключом массива. -->
 			<property name="ignoreNewlines" value="false"/>
 		</properties>
 	</rule>
 
-	<!-- Verify that everything in the global namespace is prefixed with a theme specific prefix.
-		 Multiple valid prefixes can be provided as a comma-delimited list. -->
+	<!-- Убедитесь, что все в глобальном пространстве имен имеет префикс для конкретной темы.
+		 Несколько допустимых префиксов могут быть предоставлены в виде списка через запятую. -->
 	<rule ref="WordPress.NamingConventions.PrefixAllGlobals">
 		<properties>
 			<property name="prefixes" type="array" value="_s" />
@@ -100,7 +97,7 @@
 
 	<!--
 	#############################################################################
-	USE THE PHPCompatibility RULESET
+	ИСПОЛЬЗУЙТЕ ПРАВИЛА СОВМЕСТИМОСТИ PHP
 	#############################################################################
 	-->
 
