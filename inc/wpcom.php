@@ -1,23 +1,23 @@
 <?php
 /**
- * WordPress.com-specific functions and definitions
+ * WordPress.com-специфичные функции и определения
  *
- * This file is centrally included from `wp-content/mu-plugins/wpcom-theme-compat.php`.
+ * Этот файл централизованно включен из `wp-content/mu-plugins/wpcom-theme-compat.php`.
  *
  * @package _s
  */
 
 /**
- * Adds support for wp.com-specific theme functions.
+ * Добавлена поддержка функций темы, характерных для wp.com.
  *
  * @global array $themecolors
  */
 function _s_wpcom_setup() {
 	global $themecolors;
 
-	// Set theme colors for third party services.
+	// Установить цвета темы для сторонних сервисов.
 	if ( ! isset( $themecolors ) ) {
-		// Whitelist wpcom specific variable intended to be overruled.
+		// Белый список, специфичный для переменной wpcom, предназначенный для отмены.
 		// phpcs:ignore WordPress.NamingConventions.PrefixAllGlobals.NonPrefixedVariableFound
 		$themecolors = array(
 			'bg'     => '',
