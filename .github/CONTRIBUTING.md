@@ -1,43 +1,43 @@
-Thanks for contributing to `_s` (Underscores) — you rock!
+Спасибо за участие в `_s` (Underscores) — вы опора!
 
-## Maintainers
+## Поддержка
 
-`_s` is maintained by the [Automattic Theme Team](https://themeshaper.com/about/).
+`_s` поддерживается [Automattic Theme Team](https://themeshaper.com/about/).
 
-## Reporting issues
+## Сообщения о проблемах
 
-Before submitting your issue, make sure it has not been discussed earlier. You can search for existing tickets [here](https://github.com/Automattic/_s/search).
+Перед тем как отправить вопрос, убедитесь, что он не обсуждался ранее. Вы можете искать существующие билеты [здесь](https://github.com/Automattic/_s/search).
 
-Here are some tips to consider and to help you write a great report:
+Вот несколько советов, которые следует рассмотреть и которые помогут вам написать отличный отчет:
 
-* `_s` supports Microsoft Internet Explorer 11 and Edge, as well as the latest two versions of all other major browsers.
-* `_s` is backwards compatible with the two versions prior to the current stable version of WordPress.
-* `_s` uses HTML5 markup.
-* We decided not to include translations [[#50](https://github.com/Automattic/_s/pull/50)] beyond the existing `_s.pot` file, a RTL stylesheet [[#263](https://github.com/Automattic/_s/pull/263)], or editor styles [[#225](https://github.com/Automattic/_s/pull/225)], as they are likely to change during development of an `_s` based theme.
+* `_s` поддерживает Microsoft Internet Explorer 11 и Edge, а также две последние версии всех других основных браузеров.
+* `_s` обратно совместим с двумя версиями до текущей стабильной версии WordPress.
+* `_s` использует разметку HTML5.
+* Мы решили не включать переводы [[#50](https://github.com/Automattic/_s/pull/50)] помимо существующего файла `_s.pot`, таблицы стилей RTL [[#263](https://github.com/Automattic/_s/pull/263)], или стили редактора [[#225](https://github.com/Automattic/_s/pull/225)], так как они могут измениться во время разработка темы на основе `_s`.
 
-## Sending a Pull Request
+## Отправка запроса на извлечение
 
-Found a bug you can fix? Fantastic! Patches are always welcome. Here's a few tips for crafting a great pull request:
+Нашли ошибку, которую можно исправить? Фантастика! Патчи всегда приветствуются. Вот несколько советов по созданию большого запроса на пул:
 
-* Include the purpose of your PR. Be explicit about the issue your PR solves.
-* Reference any existing issues that relate to your PR. This allows everyone to easily see all related discussions.
-* `_s` complies with the [WordPress Coding Standards](https://make.wordpress.org/core/handbook/best-practices/coding-standards/) and any PR should comply as well.
+* Включите цель вашего PR. Будьте откровенны в вопросе, который решает ваш PR.
+* Ссылка на любые существующие проблемы, связанные с вашим PR. Это позволяет каждому легко увидеть все связанные обсуждения.
+* `_s` соответствует [Стандартам кодирования WordPress](https://make.wordpress.org/core/handbook/best-practices/coding-standards/) и любой PR должен также соответствовать.
 
-### Before submitting a pull request, please make sure the following is done:
+### Прежде чем отправлять запрос, убедитесь, что выполнено следующее:
 
-1. Fork the repo and create your branch from master.
-2. Run `npm install` and `composer install`.
-3. When submitting a change that affects SCSS sources, please make sure there is no linting errors using `npm run lint:scss`, then generate the css files using `npm run compile:css` and `npm run compile:rtl`.
-4. When submitting a change that affects PHP files, please make sure there is no syntax or linting errors by running `composer lint:php` then `composer lint:wpcs`.
-5. When submitting a change that affects JS files, please make sure there is no linting errors by running `npm run lint:js`.
-6. When submitting a change that affects text strings, make sure to regenerate the POT file by running `composer make-pot`.
+1. Форкни репозиторий и создай свою ветку от мастера.
+2. Запусти `npm install` и `composer install`.
+3. При отправке изменения, затрагивающего источники SCSS, убедитесь, что нет ошибок linting с помощью `npm run lint: scss`, а затем сгенерируйте файлы css с помощью `npm run compile: css` и `npm run compile: rtl`.
+4. При отправке изменения, затрагивающего файлы PHP, убедитесь, что в нем нет синтаксиса или ошибок linting, запустив `composer lint: php` затем `composer lint: wpcs`.
+5. При отправке изменения, затрагивающего файлы JS, убедитесь, что нет ошибок linting, запустив `npm run lint: js`.
+6. При отправке изменения, затрагивающего текстовые строки, обязательно создайте файл POT заново, запустив `composer make-pot`.
 
-By contributing code to `_s`, you grant its use under the [GNU General Public License v2 (or later)](LICENSE).
+Внося код в `_s`, вы предоставляете его использование в соответствии с [GNU General Public License v2 (или позже)](LICENSE).
 
 ## Underscores.me
 
-If your issue is specific to the [Underscores.me](https://underscores.me) website, the [Underscores.me GitHub repo](https://github.com/Automattic/underscores.me) is the right place for you.
+Если ваша проблема связана с веб-сайтом [Underscores.me] (https://underscores.me), правильное место для тебя - [Underscores.me GitHub repo] (https://github.com/Automattic/underscores.me).
 
-The preferred method of generating a new theme based on `_s` is the [Underscores.me](https://underscores.me) website. If you have an alternative method, such as a shell script, write a blog post about it or host it in a separate repo -- and make sure to mention [@underscoresme](https://twitter.com/underscoresme) in your tweets!
+Предпочтительным методом создания новой темы на основе `_s` является веб-сайт [Underscores.me] (https://underscores.me). Если у вас есть альтернативный метод, такой как скрипт оболочки, напишите об этом в блоге или разместите его в отдельном репозитории - и обязательно укажите [@underscoresme] (https://twitter.com/underscoresme) в своих твитах!
 
-Want to have your avatar listed as one of the `_s` contributors [here](https://underscores.me/#contribute)? Just make sure you have an email address added to both GitHub and your local Git installation.
+Хотите, чтобы ваш аватар был указан как один из участников `_s` [здесь] (https://underscores.me/#contribute)? Просто убедитесь, что у вас есть адрес электронной почты, добавленный как к GitHub, так и к вашей локальной установке Git.
