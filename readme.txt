@@ -1,39 +1,39 @@
 === _s ===
 
-Contributors: automattic
+Авторы: automattic
 Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-comments, translation-ready
 
-Requires at least: 4.5
-Tested up to: 5.4
-Requires PHP: 5.6
-Stable tag: 1.0.0
-License: GNU General Public License v2 or later
-License URI: LICENSE
+Требует версию не ниже: 4.5
+Проверено до: 5.4
+Обязательно PHP: 5.6
+Стабильный тег: 1.0.0
+Лицензия: GNU General Public License v2 или новее
+URI лицензии: LICENSE
 
-A starter theme called _s, or underscores.
+Начальная тема под названием _s, или подчеркивание.
 
-== Description ==
+== Описание ==
 
-Hi. I'm a starter theme called _s, or underscores, if you like. I'm a theme meant for hacking so don't use me as a Parent Theme. Instead try turning me into the next, most awesome, WordPress theme out there. That's what I'm here for.
+Привет. Я начинающая тема под названием _s, или подчеркивание, если хотите. Я тема, предназначенная для взлома, поэтому не используйте меня как родительскую тему. Вместо этого попробуйте превратить меня в следующую, самую удивительную тему WordPress. Вот для чего я здесь.
 
-== Installation ==
+== Установка ==
 
-1. In your admin panel, go to Appearance > Themes and click the Add New button.
-2. Click Upload Theme and Choose File, then select the theme's .zip file. Click Install Now.
-3. Click Activate to use your new theme right away.
+1. В панели администратора перейдите в Внешний вид> Темы и нажмите кнопку Добавить новую.
+2. Нажмите «Загрузить тему» и выберите «Файл», затем выберите ZIP-файл темы. Нажмите Установить сейчас.
+3. Нажмите Активировать, чтобы использовать новую тему прямо сейчас.
 
-== Frequently Asked Questions ==
+== Часто задаваемые вопросы (FAQ) ==
 
-= Does this theme support any plugins? =
+= Эта тема поддерживает какие-либо плагины? =
 
-_s includes support for WooCommerce and for Infinite Scroll in Jetpack.
+_s включает поддержку WooCommerce и Infinite Scroll в Jetpack.
 
-== Changelog ==
+== Изменения ==
 
 = 1.0 - May 12 2015 =
-* Initial release
+* изначальный выпуск
 
-== Credits ==
+== Кредиты ==
 
-* Based on Underscores https://underscores.me/, (C) 2012-2020 Automattic, Inc., [GPLv2 or later](https://www.gnu.org/licenses/gpl-2.0.html)
+* Базируется на Underscores https://underscores.me/, (C) 2012-2020 Automattic, Inc., [GPLv2 or later](https://www.gnu.org/licenses/gpl-2.0.html)
 * normalize.css https://necolas.github.io/normalize.css/, (C) 2012-2018 Nicolas Gallagher and Jonathan Neal, [MIT](https://opensource.org/licenses/MIT)
