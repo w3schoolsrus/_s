@@ -1,11 +1,10 @@
 <?php
 /**
- * The main template file
+ * Главный файл шаблона
  *
- * This is the most generic template file in a WordPress theme
- * and one of the two required files for a theme (the other being style.css).
- * It is used to display a page when nothing more specific matches a query.
- * E.g., it puts together the home page when no home.php file exists.
+ * Это наиболее общий файл шаблона в теме WordPress и один из двух необходимых файлов для темы (другой - style.css).
+ * Используется для отображения страницы, когда ничего более конкретного не соответствует запросу.
+ * Например, он собирает домашнюю страницу, когда файл home.php не существует.
  *
  * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
  *
@@ -28,14 +27,13 @@ get_header();
 				<?php
 			endif;
 
-			/* Start the Loop */
+			/* Запуск цикла */
 			while ( have_posts() ) :
 				the_post();
 
 				/*
-				 * Include the Post-Type-specific template for the content.
-				 * If you want to override this in a child theme, then include a file
-				 * called content-___.php (where ___ is the Post Type name) and that will be used instead.
+				 * Включите Post-Type-specific шаблон для контента.
+				 * Если вы хотите переопределить это в дочерней теме, включите файл с именем content-___.php (где ___ является имя типа сообщения) и он будет использоваться вместо этого.
 				 */
 				get_template_part( 'template-parts/content', get_post_type() );
 
