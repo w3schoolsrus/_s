@@ -1,14 +1,14 @@
 /* global wp, jQuery */
 /**
- * File customizer.js.
+ * Файл customizer.js.
  *
- * Theme Customizer enhancements for a better user experience.
+ * Улучшения настроек темы для лучшего взаимодействия с пользователем.
  *
- * Contains handlers to make Theme Customizer preview reload changes asynchronously.
+ * Содержит обработчики для асинхронного предварительного просмотра настроек кастомизатора тем.
  */
 
 ( function( $ ) {
-	// Site title and description.
+	// Название сайта и описание.
 	wp.customize( 'blogname', function( value ) {
 		value.bind( function( to ) {
 			$( '.site-title a' ).text( to );
@@ -20,7 +20,7 @@
 		} );
 	} );
 
-	// Header text color.
+	// Цвет текста заголовка.
 	wp.customize( 'header_textcolor', function( value ) {
 		value.bind( function( to ) {
 			if ( 'blank' === to ) {
