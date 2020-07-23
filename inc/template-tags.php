@@ -1,15 +1,15 @@
 <?php
 /**
- * Custom template tags for this theme
+ * Пользовательские теги шаблонов для этой темы
  *
- * Eventually, some of the functionality here could be replaced by core features.
+ * В конце концов, некоторые функции здесь могут быть заменены основными функциями.
  *
  * @package _s
  */
 
 if ( ! function_exists( '_s_posted_on' ) ) :
 	/**
-	 * Prints HTML with meta information for the current post-date/time.
+	 * Печатает HTML с метаинформацией для текущей даты / времени.
 	 */
 	function _s_posted_on() {
 		$time_string = '<time class="entry-date published updated" datetime="%1$s">%2$s</time>';
@@ -38,7 +38,7 @@ endif;
 
 if ( ! function_exists( '_s_posted_by' ) ) :
 	/**
-	 * Prints HTML with meta information for the current author.
+	 * Печатает HTML с метаинформацией для текущего автора.
 	 */
 	function _s_posted_by() {
 		$byline = sprintf(
@@ -54,22 +54,22 @@ endif;
 
 if ( ! function_exists( '_s_entry_footer' ) ) :
 	/**
-	 * Prints HTML with meta information for the categories, tags and comments.
+	 * Печатает HTML с метаинформацией для категорий, тегов и комментариев.
 	 */
 	function _s_entry_footer() {
-		// Hide category and tag text for pages.
+		// Скрыть категорию и текст тега для страниц.
 		if ( 'post' === get_post_type() ) {
-			/* translators: used between list items, there is a space after the comma */
+			/* переводчики: используются между элементами списка, после запятой есть пробел */
 			$categories_list = get_the_category_list( esc_html__( ', ', '_s' ) );
 			if ( $categories_list ) {
 				/* translators: 1: list of categories. */
 				printf( '<span class="cat-links">' . esc_html__( 'Posted in %1$s', '_s' ) . '</span>', $categories_list ); // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped
 			}
 
-			/* translators: used between list items, there is a space after the comma */
+			/* переводчики: используются между элементами списка, после запятой есть пробел */
 			$tags_list = get_the_tag_list( '', esc_html_x( ', ', 'list item separator', '_s' ) );
 			if ( $tags_list ) {
-				/* translators: 1: list of tags. */
+				/* переводчики: 1: список тегов. */
 				printf( '<span class="tags-links">' . esc_html__( 'Tagged %1$s', '_s' ) . '</span>', $tags_list ); // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped
 			}
 		}
@@ -96,7 +96,7 @@ if ( ! function_exists( '_s_entry_footer' ) ) :
 		edit_post_link(
 			sprintf(
 				wp_kses(
-					/* translators: %s: Name of current post. Only visible to screen readers */
+					/* translators: %s: Название текущего поста. Видно только скринридерам */
 					__( 'Edit <span class="screen-reader-text">%s</span>', '_s' ),
 					array(
 						'span' => array(
@@ -114,10 +114,9 @@ endif;
 
 if ( ! function_exists( '_s_post_thumbnail' ) ) :
 	/**
-	 * Displays an optional post thumbnail.
+	 * Отображает дополнительный эскиз сообщения.
 	 *
-	 * Wraps the post thumbnail in an anchor element on index views, or a div
-	 * element when on single views.
+	 * Оборачивает миниатюру записи в элементе привязки в представлениях индекса или элементе div в отдельных представлениях.
 	 */
 	function _s_post_thumbnail() {
 		if ( post_password_required() || is_attachment() || ! has_post_thumbnail() ) {
@@ -149,13 +148,13 @@ if ( ! function_exists( '_s_post_thumbnail' ) ) :
 			</a>
 
 			<?php
-		endif; // End is_singular().
+		endif; // Конец is_singular().
 	}
 endif;
 
 if ( ! function_exists( 'wp_body_open' ) ) :
 	/**
-	 * Shim for sites older than 5.2.
+	 * Прокладка для сайтов старше чем 5.2.
 	 *
 	 * @link https://core.trac.wordpress.org/ticket/12563
 	 */
