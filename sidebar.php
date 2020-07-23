@@ -1,6 +1,6 @@
 <?php
 /**
- * The sidebar containing the main widget area
+ * Боковая панель с основной областью виджетов
  *
  * @link https://developer.wordpress.org/themes/basics/template-files/#template-partials
  *
