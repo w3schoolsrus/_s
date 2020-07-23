@@ -1,8 +1,8 @@
 <?php
 /**
- * The template for displaying the footer
+ * Шаблон для отображения нижнего колонтитула
  *
- * Contains the closing of the #content div and all content after.
+ * Содержит закрытие #content div и все содержимое после.
  *
  * @link https://developer.wordpress.org/themes/basics/template-files/#template-partials
  *
