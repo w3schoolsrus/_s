@@ -17,12 +17,12 @@ get_header();
 
 			get_template_part( 'template-parts/content', 'page' );
 
-			// If comments are open or we have at least one comment, load up the comment template.
+			// Если комментарии открыты или у нас есть хотя бы один комментарий, загрузите шаблон комментария.
 			if ( comments_open() || get_comments_number() ) :
 				comments_template();
 			endif;
 
-		endwhile; // End of the loop.
+		endwhile; // Конец цикла.
 		?>
 
 	</main><!-- #main -->
