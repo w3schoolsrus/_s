@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.org/Automattic/_s.svg?branch=master)](https://travis-ci.org/Automattic/_s)
+[![Статус сборки](https://travis-ci.org/Automattic/_s.svg?branch=master)](https://travis-ci.org/Automattic/_s)
 
 _s
 ===
@@ -9,7 +9,7 @@ _s
 
 * Современный рабочий процесс с готовым интерфейсом командной строки, чтобы превратить ваш проект в более приятный опыт.
 * Правильное количество простых, хорошо прокомментированных, современных шаблонов HTML5.
-* Пользовательская реализация заголовка в `inc / custom-header.php`. Просто добавьте фрагмент кода, найденный в комментариях `inc / custom-header.php`, к вашему шаблону` header.php`.
+* Пользовательская реализация заголовка в `inc / custom-header.php`. Просто добавьте фрагмент кода, найденный в комментариях `inc / custom-header.php`, к вашему шаблону `header.php`.
 * Пользовательские теги шаблонов в `inc / template-tags.php`, которые поддерживают ваши шаблоны в чистоте и порядке и предотвращают дублирование кода.
 * Некоторые небольшие изменения в `inc / template-functions.php`, которые могут улучшить ваш опыт создания тем.
 * Скрипт в `js / navigation.js`, который делает ваше меню переключаемым выпадающим меню на маленьких экранах (например, на вашем телефоне), готовым для CSS артистизма. Он поставлен в очередь в `functions.php`.
@@ -53,7 +53,7 @@ $ npm install
 
 ### Доступные команды CLI
 
-`_s` comes packed with CLI commands tailored for WordPress theme development :
+`_s` поставляется с командами CLI, разработанными специально для разработки тем WordPress :
 
 - `composer lint:wpcs` : проверяет все файлы PHP на [PHP Coding Standards](https://developer.wordpress.org/coding-standards/wordpress-coding-standards/php/).
 - `composer lint:php` : проверяет все файлы PHP на наличие синтаксических ошибок.
