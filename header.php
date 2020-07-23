@@ -1,8 +1,8 @@
 <?php
 /**
- * The header for our theme
+ * Заголовок нашей темы
  *
- * This is the template that displays all of the <head> section and everything up until <div id="content">
+ * Это шаблон, который отображает весь раздел <head> и все до <div id="content">
  *
  * @link https://developer.wordpress.org/themes/basics/template-files/#template-partials
  *
