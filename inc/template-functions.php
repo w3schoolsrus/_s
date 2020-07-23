@@ -1,23 +1,23 @@
 <?php
 /**
- * Functions which enhance the theme by hooking into WordPress
+ * Функции, которые улучшают тему, подключаясь к WordPress
  *
  * @package _s
  */
 
 /**
- * Adds custom classes to the array of body classes.
+ * Добавляет пользовательские классы в массив классов тела.
  *
  * @param array $classes Classes for the body element.
  * @return array
  */
 function _s_body_classes( $classes ) {
-	// Adds a class of hfeed to non-singular pages.
+	// Добавляет класс hfeed к несингулярным страницам.
 	if ( ! is_singular() ) {
 		$classes[] = 'hfeed';
 	}
 
-	// Adds a class of no-sidebar when there is no sidebar present.
+	// Добавляет класс без боковой панели, когда боковой панели нет.
 	if ( ! is_active_sidebar( 'sidebar-1' ) ) {
 		$classes[] = 'no-sidebar';
 	}
@@ -27,7 +27,7 @@ function _s_body_classes( $classes ) {
 add_filter( 'body_class', '_s_body_classes' );
 
 /**
- * Add a pingback url auto-discovery header for single posts, pages, or attachments.
+ * Добавьте заголовок автообнаружения URL-адреса pingback для отдельных сообщений, страниц или вложений.
  */
 function _s_pingback_header() {
 	if ( is_singular() && pings_open() ) {
