@@ -1,6 +1,6 @@
 <?php
 /**
- * _s functions and definitions
+ * _s функции и определения
  *
  * @link https://developer.wordpress.org/themes/basics/theme-functions/
  *
@@ -8,46 +8,41 @@
  */
 
 if ( ! defined( '_S_VERSION' ) ) {
-	// Replace the version number of the theme on each release.
+	// Замените номер версии темы в каждом выпуске.
 	define( '_S_VERSION', '1.0.0' );
 }
 
 if ( ! function_exists( '_s_setup' ) ) :
 	/**
-	 * Sets up theme defaults and registers support for various WordPress features.
+	 * Устанавливает настройки по умолчанию темы и регистрирует поддержку различных функций WordPress.
 	 *
-	 * Note that this function is hooked into the after_setup_theme hook, which
-	 * runs before the init hook. The init hook is too late for some features, such
-	 * as indicating support for post thumbnails.
+	 * Обратите внимание, что эта функция подключена к хуку after_setup_theme, который запускается до хука init. Хук инициализации слишком поздно для некоторых функций, таких как указание поддержки миниатюр сообщений.
 	 */
 	function _s_setup() {
 		/*
-		 * Make theme available for translation.
-		 * Translations can be filed in the /languages/ directory.
-		 * If you're building a theme based on _s, use a find and replace
-		 * to change '_s' to the name of your theme in all the template files.
+		 * Сделать тему доступной для перевода.
+		 * Переводы можно сохранить в каталоге / languages /.
+		 * Если вы создаете тему на основе _s, используйте поиск и замену, чтобы заменить '_s' на имя вашей темы во всех файлах шаблона.
 		 */
 		load_theme_textdomain( '_s', get_template_directory() . '/languages' );
 
-		// Add default posts and comments RSS feed links to head.
+		// Добавить по умолчанию сообщения и комментарии RSS-канал ссылки в head.
 		add_theme_support( 'automatic-feed-links' );
 
 		/*
-		 * Let WordPress manage the document title.
-		 * By adding theme support, we declare that this theme does not use a
-		 * hard-coded <title> tag in the document head, and expect WordPress to
-		 * provide it for us.
+		 * Позвольте WordPress управлять заголовком документа.
+		 * Добавляя поддержку тем, мы заявляем, что эта тема не использует жестко заданный тег <title> в заголовке документа, и ожидаем, что WordPress предоставит его нам.
 		 */
 		add_theme_support( 'title-tag' );
 
 		/*
-		 * Enable support for Post Thumbnails on posts and pages.
+		 * Включить поддержку миниатюр сообщений в постах и страницах.
 		 *
 		 * @link https://developer.wordpress.org/themes/functionality/featured-images-post-thumbnails/
 		 */
 		add_theme_support( 'post-thumbnails' );
 
-		// This theme uses wp_nav_menu() in one location.
+		// Эта тема использует wp_nav_menu () в одном месте.
 		register_nav_menus(
 			array(
 				'menu-1' => esc_html__( 'Primary', '_s' ),
@@ -55,8 +50,7 @@ if ( ! function_exists( '_s_setup' ) ) :
 		);
 
 		/*
-		 * Switch default core markup for search form, comment form, and comments
-		 * to output valid HTML5.
+		 * Переключите разметку ядра по умолчанию для формы поиска, формы комментариев и комментариев для вывода правильного HTML5.
 		 */
 		add_theme_support(
 			'html5',
@@ -71,7 +65,7 @@ if ( ! function_exists( '_s_setup' ) ) :
 			)
 		);
 
-		// Set up the WordPress core custom background feature.
+		// Настройка основной фоновой функции WordPress.
 		add_theme_support(
 			'custom-background',
 			apply_filters(
@@ -83,11 +77,11 @@ if ( ! function_exists( '_s_setup' ) ) :
 			)
 		);
 
-		// Add theme support for selective refresh for widgets.
+		// Добавить поддержку тем для выборочного обновления для виджетов.
 		add_theme_support( 'customize-selective-refresh-widgets' );
 
 		/**
-		 * Add support for core custom logo.
+		 * Добавить поддержку основного логотипа.
 		 *
 		 * @link https://codex.wordpress.org/Theme_Logo
 		 */
@@ -105,22 +99,22 @@ endif;
 add_action( 'after_setup_theme', '_s_setup' );
 
 /**
- * Set the content width in pixels, based on the theme's design and stylesheet.
+ * Установите ширину содержимого в пикселях, основываясь на дизайне темы и таблице стилей.
  *
- * Priority 0 to make it available to lower priority callbacks.
+ * Приоритет 0, чтобы сделать его доступным для обратных вызовов с более низким приоритетом.
  *
  * @global int $content_width
  */
 function _s_content_width() {
-	// This variable is intended to be overruled from themes.
-	// Open WPCS issue: {@link https://github.com/WordPress-Coding-Standards/WordPress-Coding-Standards/issues/1043}.
+	// Эта переменная предназначена для отмены из тем.
+	// Открытая проблема WPCS: {@link https://github.com/WordPress-Coding-Standards/WordPress-Coding-Standards/issues/1043}.
 	// phpcs:ignore WordPress.NamingConventions.PrefixAllGlobals.NonPrefixedVariableFound
 	$GLOBALS['content_width'] = apply_filters( '_s_content_width', 640 );
 }
 add_action( 'after_setup_theme', '_s_content_width', 0 );
 
 /**
- * Register widget area.
+ * Зарегистрировать область виджетов.
  *
  * @link https://developer.wordpress.org/themes/functionality/sidebars/#registering-a-sidebar
  */
@@ -140,7 +134,7 @@ function _s_widgets_init() {
 add_action( 'widgets_init', '_s_widgets_init' );
 
 /**
- * Enqueue scripts and styles.
+ * Ставить скрипты и стили.
  */
 function _s_scripts() {
 	wp_enqueue_style( '_s-style', get_stylesheet_uri(), array(), _S_VERSION );
@@ -155,34 +149,34 @@ function _s_scripts() {
 add_action( 'wp_enqueue_scripts', '_s_scripts' );
 
 /**
- * Implement the Custom Header feature.
+ * Реализуйте функцию пользовательского заголовка.
  */
 require get_template_directory() . '/inc/custom-header.php';
 
 /**
- * Custom template tags for this theme.
+ * Пользовательские теги шаблонов для этой темы.
  */
 require get_template_directory() . '/inc/template-tags.php';
 
 /**
- * Functions which enhance the theme by hooking into WordPress.
+ * Функции, которые улучшают тему, подключаясь к WordPress.
  */
 require get_template_directory() . '/inc/template-functions.php';
 
 /**
- * Customizer additions.
+ * Дополнения настройщика.
  */
 require get_template_directory() . '/inc/customizer.php';
 
 /**
- * Load Jetpack compatibility file.
+ * Загрузить файл совместимости с Jetpack.
  */
 if ( defined( 'JETPACK__VERSION' ) ) {
 	require get_template_directory() . '/inc/jetpack.php';
 }
 
 /**
- * Load WooCommerce compatibility file.
+ * Загрузить файл совместимости WooCommerce.
  */
 if ( class_exists( 'WooCommerce' ) ) {
 	require get_template_directory() . '/inc/woocommerce.php';
