@@ -1,9 +1,8 @@
 <?php
 /**
- * The template for displaying comments
+ * Шаблон для отображения комментариев
  *
- * This is the template that displays the area of the page that contains both the current comments
- * and the comment form.
+ * Это шаблон, который отображает область страницы, которая содержит как текущие комментарии, так и форму комментария..
  *
  * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
  *
@@ -11,9 +10,7 @@
  */
 
 /*
- * If the current post is protected by a password and
- * the visitor has not yet entered the password we will
- * return early without loading the comments.
+ * Если текущее сообщение защищено паролем, а посетитель еще не ввел пароль, мы вернемся рано без загрузки комментариев.
  */
 if ( post_password_required() ) {
 	return;
@@ -23,7 +20,7 @@ if ( post_password_required() ) {
 <div id="comments" class="comments-area">
 
 	<?php
-	// You can start editing here -- including this comment!
+	// Вы можете начать редактирование здесь - включая этот комментарий!
 	if ( have_comments() ) :
 		?>
 		<h2 class="comments-title">
@@ -37,7 +34,7 @@ if ( post_password_required() ) {
 				);
 			} else {
 				printf( 
-					/* translators: 1: comment count number, 2: title. */
+					/* translators: 1: количество комментариев, 2: заголовок. */
 					esc_html( _nx( '%1$s thought on &ldquo;%2$s&rdquo;', '%1$s thoughts on &ldquo;%2$s&rdquo;', $_s_comment_count, 'comments title', '_s' ) ),
 					number_format_i18n( $_s_comment_count ), // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped
 					'<span>' . wp_kses_post( get_the_title() ) . '</span>'
@@ -62,14 +59,14 @@ if ( post_password_required() ) {
 		<?php
 		the_comments_navigation();
 
-		// If comments are closed and there are comments, let's leave a little note, shall we?
+		// Если комментарии закрыты и есть комментарии, давайте оставим небольшую заметку, не так ли?
 		if ( ! comments_open() ) :
 			?>
-			<p class="no-comments"><?php esc_html_e( 'Comments are closed.', '_s' ); ?></p>
+			<p class="no-comments"><?php esc_html_e( 'комментарии закрыты.', '_s' ); ?></p>
 			<?php
 		endif;
 
-	endif; // Check for have_comments().
+	endif; // Проверить have_comments().
 
 	comment_form();
 	?>
