@@ -69,68 +69,37 @@ body {margin: 0;}
 /**
  * Рендеринг `main` элемента последовательно в IE.
  */
-main {
-	display: block;
-}
-
+main {display: block;}
 /**
- * Correct the font size and margin on `h1` elements within `section` and
- * `article` contexts in Chrome, Firefox, and Safari.
+ * Исправьте размер шрифта и поля для элементов `h1` в контекстах` section` и `article` в Chrome, Firefox и Safari.
  */
-h1 {
-	font-size: 2em;
-	margin: 0.67em 0;
-}
+h1 {font-size: 2em;margin: 0.67em 0;}
 
-/* Grouping content
+/* Группировка контента
 	 ========================================================================== */
 
 /**
- * 1. Add the correct box sizing in Firefox.
- * 2. Show the overflow in Edge and IE.
+ * 1. Добавьте правильный размер окна в Firefox.
+ * 2. Покажите переполнение в Edge и IE.
  */
-hr {
-	box-sizing: content-box;
-	height: 0;
-	overflow: visible;
-}
-
+hr {box-sizing: content-box;height: 0;overflow: visible;}
 /**
- * 1. Correct the inheritance and scaling of font size in all browsers.
- * 2. Correct the odd `em` font sizing in all browsers.
+ * 1. Исправьте наследование и масштабирование размера шрифта во всех браузерах.
+ * 2. Исправьте нечетный размер шрифта `em` во всех браузерах.
  */
-pre {
-	font-family: monospace, monospace;
-	font-size: 1em;
-}
+pre {font-family: monospace, monospace;font-size: 1em;}
 
-/* Text-level semantics
+/* Семантика текстового уровня
 	 ========================================================================== */
+/* Убрать серый фон на активных ссылках в IE 10. */
+a {background-color: transparent;}
 
-/**
- * Remove the gray background on active links in IE 10.
- */
-a {
-	background-color: transparent;
-}
+/* 1. Убрать нижнюю границу в Chrome 57-
+ * 2. Добавьте правильное оформление текста в Chrome, Edge, IE, Opera и Safari. */
+abbr[title] {border-bottom: none;text-decoration: underline;text-decoration: underline dotted;}
 
-/**
- * 1. Remove the bottom border in Chrome 57-
- * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
- */
-abbr[title] {
-	border-bottom: none;
-	text-decoration: underline;
-	text-decoration: underline dotted;
-}
-
-/**
- * Add the correct font weight in Chrome, Edge, and Safari.
- */
-b,
-strong {
-	font-weight: bolder;
-}
+/* Добавьте правильную жирность шрифта в Chrome, Edge и Safari. */
+b, strong {font-weight: bolder;}
 
 /**
  * 1. Correct the inheritance and scaling of font size in all browsers.
