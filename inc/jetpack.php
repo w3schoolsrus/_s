@@ -1,6 +1,6 @@
 <?php
 /**
- * Jetpack Compatibility File
+ * Файл совместимости jetpack
  *
  * @link https://jetpack.com/
  *
@@ -8,14 +8,14 @@
  */
 
 /**
- * Jetpack setup function.
+ * Функция настройки Jetpack.
  *
- * See: https://jetpack.com/support/infinite-scroll/
- * See: https://jetpack.com/support/responsive-videos/
- * See: https://jetpack.com/support/content-options/
+ * Смотрите: https://jetpack.com/support/infinite-scroll/
+ * Смотрите: https://jetpack.com/support/responsive-videos/
+ * Смотрите: https://jetpack.com/support/content-options/
  */
 function _s_jetpack_setup() {
-	// Add theme support for Infinite Scroll.
+	// Добавить поддержку тем для Infinite Scroll.
 	add_theme_support(
 		'infinite-scroll',
 		array(
@@ -25,10 +25,10 @@ function _s_jetpack_setup() {
 		)
 	);
 
-	// Add theme support for Responsive Videos.
+	// Добавить поддержку тем для адаптивных видео.
 	add_theme_support( 'jetpack-responsive-videos' );
 
-	// Add theme support for Content Options.
+	// Добавить поддержку тем для параметров контента.
 	add_theme_support(
 		'jetpack-content-options',
 		array(
@@ -51,7 +51,7 @@ function _s_jetpack_setup() {
 add_action( 'after_setup_theme', '_s_jetpack_setup' );
 
 /**
- * Custom render function for Infinite Scroll.
+ * Пользовательская функция рендеринга для Infinite Scroll.
  */
 function _s_infinite_scroll_render() {
 	while ( have_posts() ) {
