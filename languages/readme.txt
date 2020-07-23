@@ -1,6 +1,6 @@
-Place your theme language files in this directory.
+Поместите языковые файлы вашей темы в этот каталог.
 
-Please visit the following links to learn more about translating WordPress themes:
+Пожалуйста, посетите следующие ссылки, чтобы узнать больше о переводе тем WordPress:
 
 https://make.wordpress.org/polyglots/teams/
 https://developer.wordpress.org/themes/functionality/localization/
