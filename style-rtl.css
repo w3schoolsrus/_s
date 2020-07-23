@@ -1,29 +1,28 @@
 /*!
-Theme Name: _s
-Theme URI: https://underscores.me/
-Author: Automattic
-Author URI: https://automattic.com/
-Description: Hi. I'm a starter theme called <code>_s</code>, or <em>underscores</em>, if you like. I'm a theme meant for hacking so don't use me as a <em>Parent Theme</em>. Instead try turning me into the next, most awesome, WordPress theme out there. That's what I'm here for.
-Version: 1.0.0
-Tested up to: 5.4
-Requires PHP: 5.6
-License: GNU General Public License v2 or later
-License URI: LICENSE
-Text Domain: _s
-Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-comments, translation-ready
+Имя Темы: _s
+URI Темы: https://github.com/w3schoolsrus/_s/
+Автор: Automattic
+Автор URI: https://automattic.com/
+Описание: Привет. Я начальная тема под названием <code>_s</code> или <em>подчеркивание</em>, если хотите. Я тема, предназначенная для взлома, поэтому не используйте меня в качестве <em>родительской темы</em>. Вместо этого попробуйте превратить меня в следующую, самую удивительную тему WordPress. Вот для чего я здесь.
+Версия: 1.0.0
+Проверено до: 5.4
+Требует PHP: 5.6
+Лицензия: GNU General Public License v2 or later
+Лицензия URI: LICENSE
+Текстовый домен: _s
+Теги: custom-background, custom-logo, custom-menu, featured-images, threaded-comments, translation-ready
 
-This theme, like WordPress, is licensed under the GPL.
-Use it to make something cool, have fun, and share what you've learned.
+Эта тема, как и WordPress, распространяется по лицензии GPL.
+Используйте её, чтобы сделать что-то классное, повеселиться и поделиться тем, что вы знаете.
 
-_s is based on Underscores https://underscores.me/, (C) 2012-2020 Automattic, Inc.
-Underscores is distributed under the terms of the GNU GPL v2 or later.
+_s основана на Underscores https://underscores.me/, (C) 2012-2020 Automattic, Inc.
+Underscores распространяется в соответствии с условиями GNU GPL v2 или новее.
 
-Normalizing styles have been helped along thanks to the fine work of
-Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
+Нормализация стилей помогла благодаря прекрасной работе Николаса Галлахера и Джонатана Нила https://necolas.github.io/normalize.css/
 */
 
 /*--------------------------------------------------------------
->>> TABLE OF CONTENTS:
+>>> ОГЛАВЛЕНИЕ:
 ----------------------------------------------------------------
 # Generic
 	- Normalize
