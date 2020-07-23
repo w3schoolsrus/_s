@@ -1,6 +1,6 @@
 <?php
 /**
- * The template for displaying search results pages
+ * Шаблон для отображения страниц результатов поиска
  *
  * @link https://developer.wordpress.org/themes/basics/template-hierarchy/#search-result
  *
@@ -24,14 +24,13 @@ get_header();
 			</header><!-- .page-header -->
 
 			<?php
-			/* Start the Loop */
+			/* Старт цикла */
 			while ( have_posts() ) :
 				the_post();
 
 				/**
-				 * Run the loop for the search to output the results.
-				 * If you want to overload this in a child theme then include a file
-				 * called content-search.php and that will be used instead.
+				 * Запустите цикл поиска для вывода результатов.
+				 * Если вы хотите перегрузить это в дочерней теме, включите файл с именем content-search.php, который будет использоваться вместо этого.
 				 */
 				get_template_part( 'template-parts/content', 'search' );
 
