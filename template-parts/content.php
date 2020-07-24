@@ -1,6 +1,6 @@
 <?php
 /**
- * Template part for displaying posts
+ * Шаблонная часть для отображения постов
  *
  * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
  *
@@ -36,8 +36,8 @@
 		the_content(
 			sprintf(
 				wp_kses(
-					/* translators: %s: Name of current post. Only visible to screen readers */
-					__( 'Continue reading<span class="screen-reader-text"> "%s"</span>', '_s' ),
+					/* translators: %s: Название текущего поста. Видно только скринридерам */
+					__( 'Продолжить чтение<span class="screen-reader-text"> "%s"</span>', '_s' ),
 					array(
 						'span' => array(
 							'class' => array(),
@@ -50,7 +50,7 @@
 
 		wp_link_pages(
 			array(
-				'before' => '<div class="page-links">' . esc_html__( 'Pages:', '_s' ),
+				'before' => '<div class="page-links">' . esc_html__( 'Страницы:', '_s' ),
 				'after'  => '</div>',
 			)
 		);
