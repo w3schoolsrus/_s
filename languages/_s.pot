@@ -43,29 +43,29 @@ msgid "Похоже, что ничего не было найдено в это�
 msgstr ""
 
 #: 404.php:31
-msgid "Most Used Categories"
+msgid "Самые используемые категории"
 msgstr ""
 
 #. translators: %1$s: smiley
 #: 404.php:49
-msgid "Try looking in the monthly archives. %1$s"
+msgid "Попробуйте поискать в ежемесячных архивах. %1$s"
 msgstr ""
 
 #. translators: 1: title.
 #: comments.php:35
-msgid "One thought on &ldquo;%1$s&rdquo;"
+msgid "Одна мысль на &ldquo;%1$s&rdquo;"
 msgstr ""
 
 #. translators: 1: comment count number, 2: title.
 #: comments.php:41
-msgctxt "comments title"
-msgid "%1$s thought on &ldquo;%2$s&rdquo;"
-msgid_plural "%1$s thoughts on &ldquo;%2$s&rdquo;"
+msgctxt "заголовок комментария"
+msgid "%1$s мысль про &ldquo;%2$s&rdquo;"
+msgid_plural "%1$s мысли о &ldquo;%2$s&rdquo;"
 msgstr[0] ""
 msgstr[1] ""
 
 #: comments.php:68
-msgid "Comments are closed."
+msgid "комментарии закрыты."
 msgstr ""
 
 #: footer.php:18
@@ -74,12 +74,12 @@ msgstr ""
 
 #. translators: %s: CMS name, i.e. WordPress.
 #: footer.php:21
-msgid "Proudly powered by %s"
+msgid "Сайт работает на %s"
 msgstr ""
 
 #. translators: 1: Theme name, 2: Theme author.
 #: footer.php:27
-msgid "Theme: %1$s by %2$s."
+msgid "Тема: %1$s by %2$s."
 msgstr ""
 
 #: functions.php:53
@@ -87,112 +87,112 @@ msgid "Primary"
 msgstr ""
 
 #: functions.php:130
-msgid "Sidebar"
+msgid "Сайдбар"
 msgstr ""
 
 #: functions.php:132
-msgid "Add widgets here."
+msgid "Добавить виджеты здесь."
 msgstr ""
 
 #: header.php:26
-msgid "Skip to content"
+msgid "Перейти к содержанию"
 msgstr ""
 
 #: header.php:49
-msgid "Primary Menu"
+msgid "Основное меню"
 msgstr ""
 
 #. translators: %s: post date.
 #: inc/template-tags.php:30
-msgctxt "post date"
-msgid "Posted on %s"
+msgctxt "Дата публикации"
+msgid "Опубликовано %s"
 msgstr ""
 
 #. translators: %s: post author.
 #: inc/template-tags.php:46
-msgctxt "post author"
+msgctxt "автор публикации"
 msgid "by %s"
 msgstr ""
 
-#. translators: used between list items, there is a space after the comma
+#. translators: используется между элементами списка, после запятой есть пробел
 #: inc/template-tags.php:63
 msgid ", "
 msgstr ""
 
-#. translators: 1: list of categories.
+#. translators: 1: Список категорий.
 #: inc/template-tags.php:66
-msgid "Posted in %1$s"
+msgid "Опубликовано в %1$s"
 msgstr ""
 
-#. translators: used between list items, there is a space after the comma
+#. translators: Используется между элементами списка, после запятой есть пробел
 #: inc/template-tags.php:70
-msgctxt "list item separator"
+msgctxt "разделитель элементов списка"
 msgid ", "
 msgstr ""
 
-#. translators: 1: list of tags.
+#. translators: 1: Список тегов.
 #: inc/template-tags.php:73
-msgid "Tagged %1$s"
+msgid "Помеченный %1$s"
 msgstr ""
 
 #. translators: %s: post title
 #: inc/template-tags.php:83
-msgid "Leave a Comment<span class=\"screen-reader-text\"> on %s</span>"
+msgid "Оставить комментарий<span class=\"screen-reader-text\"> on %s</span>"
 msgstr ""
 
-#. translators: %s: Name of current post. Only visible to screen readers
+#. translators: %s: Название текущего поста. Видно только скринридерам
 #: inc/template-tags.php:100
 #: template-parts/content-page.php:39
-msgid "Edit <span class=\"screen-reader-text\">%s</span>"
+msgid "Редактировать <span class=\"screen-reader-text\">%s</span>"
 msgstr ""
 
 #: inc/woocommerce.php:186
-msgid "View your shopping cart"
+msgid "Просмотр вашей корзины"
 msgstr ""
 
 #. translators: number of items in the mini cart.
 #: inc/woocommerce.php:190
-msgid "%d item"
-msgid_plural "%d items"
+msgid "%d пункт"
+msgid_plural "%d пункты"
 msgstr[0] ""
 msgstr[1] ""
 
-#. translators: %s: search query.
+#. translators: %s: поисковый запрос.
 #: search.php:22
-msgid "Search Results for: %s"
+msgid "Результаты поиска для: %s"
 msgstr ""
 
 #: single.php:23
-msgid "Previous:"
+msgid "Предыдущий:"
 msgstr ""
 
 #: single.php:24
-msgid "Next:"
+msgid "Следующий:"
 msgstr ""
 
 #: template-parts/content-none.php:14
-msgid "Nothing Found"
+msgid "Ничего не найдено"
 msgstr ""
 
-#. translators: 1: link to WP admin new post page.
+#. translators: 1: ссылка на страницу WP нового поста администратора.
 #: template-parts/content-none.php:24
-msgid "Ready to publish your first post? <a href=\"%1$s\">Get started here</a>."
+msgid "Готовы опубликовать свой первый пост? <a href=\"%1$s\">Начните здесь</a>."
 msgstr ""
 
 #: template-parts/content-none.php:37
-msgid "Sorry, but nothing matched your search terms. Please try again with some different keywords."
+msgid "Извините, но ничего не соответствует вашим условиям поиска. Пожалуйста, попытайтесь снова с другими ключевыми словами."
 msgstr ""
 
 #: template-parts/content-none.php:44
-msgid "It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps searching can help."
+msgid "Мы не можем найти&rsquo; то, что вы&rsquo; ищите. Возможно, поиск может помочь."
 msgstr ""
 
 #: template-parts/content-page.php:25
 #: template-parts/content.php:53
-msgid "Pages:"
+msgid "Страницы:"
 msgstr ""
 
-#. translators: %s: Name of current post. Only visible to screen readers
+#. translators: %s: Название текущего поста. Видно только скринридерам
 #: template-parts/content.php:40
-msgid "Continue reading<span class=\"screen-reader-text\"> \"%s\"</span>"
+msgid "Продолжить чтение<span class=\"screen-reader-text\"> \"%s\"</span>"
 msgstr ""
