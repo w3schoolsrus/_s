@@ -1,6 +1,6 @@
 <?php
 /**
- * Template part for displaying page content in page.php
+ * Шаблонная часть для отображения содержимого страницы в page.php
  *
  * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
  *
@@ -22,7 +22,7 @@
 
 		wp_link_pages(
 			array(
-				'before' => '<div class="page-links">' . esc_html__( 'Pages:', '_s' ),
+				'before' => '<div class="page-links">' . esc_html__( 'Страницы:', '_s' ),
 				'after'  => '</div>',
 			)
 		);
@@ -35,7 +35,7 @@
 			edit_post_link(
 				sprintf(
 					wp_kses(
-						/* translators: %s: Name of current post. Only visible to screen readers */
+						/* translators: %s: Название текущего поста. Видно только скринридерам */
 						__( 'Edit <span class="screen-reader-text">%s</span>', '_s' ),
 						array(
 							'span' => array(
